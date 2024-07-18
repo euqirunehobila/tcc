@@ -1,0 +1,129 @@
+:root {
+    --btn-exp: var(--yellow);
+    --background-select-game: var(--dark-gray);
+}
+
+body {
+    color: #fff;
+    background: #000;
+}
+
+.card {
+    background: #272727;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card .game{
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content * {
+    margin: 10px;
+
+}
+
+.card .content{
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    margin: 20px
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .card .game {
+        width: 100%;
+        height: 40%;
+    }
+    .card .content {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+.select-game-title {
+    font-size: 150%;
+    padding: 3 auto;
+    color: aliceblue;
+    text-align: center;
+}
+
+.monkey-game {
+    filter: opacity(40%);
+}
+
+.monkey-game:hover {
+    filter: opacity(100%);
+    transition: 0.5s;
+}
+
+.snake-game img {
+    width: 20%;
+}
+
+.monkey-game img {
+    width: 32%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+}
+
+.snake-game h2,
+.monkey-game {
+    padding-top: 5%;
+    color: azure;
+    font-weight: 700;
+}
+
+.btn-exp {
+    background-color: var(--btn-exp);
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.845);
+    border-radius: 8px;
+}
+
+.btn-exp:hover {
+    box-shadow: 0px 4px 30px rgba(122, 255, 126, 0.882);
+}
+
+.btn-blocked {
+    background-color: var(--dark-gray);
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.845);
+    border-radius: 8px;
+}
+
+.btn-blocked:hover {
+    box-shadow: 0px 4px 30px rgba(189, 24, 24, 0.882);
+    transition: 0.3s;
+}

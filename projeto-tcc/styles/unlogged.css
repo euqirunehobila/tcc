@@ -1,0 +1,19 @@
+body{
+    background: #fcb7fc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-card {
+
+    margin-top: 20vh;
+    background: #8c00ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 30px;
+    gap: 20px;
+    color: #fff;
+}
